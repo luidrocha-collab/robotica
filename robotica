@@ -1,0 +1,2697 @@
+Algoritmo questão 1:
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    int idade = 16;
+    std::string nome = "jao";
+    char carac = 'b';
+    float num1 = 1.77865281;
+    bool boleano = true;Algoritmo questão 1:
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    int idade = 16;
+    std::string nome = "jao";
+    char carac = 'b';
+    float num1 = 1.77865281;
+    bool boleano = true;
+    double num2 = 8.82738474;
+    short int num3 = 32767;
+    long int num4 = 2147483647;
+    long long int num5 = 9223372036854775807;
+    unsigned int num6 = 4294967295;
+
+    std::cout << "tipo int: " << idade << std::endl;
+    std::cout << "tipo string: " << nome << std::endl;
+    std::cout << "tipo char: " << carac << std::endl;
+    std::cout << "tipo float: " << num1 << std::endl;
+    std::cout << "tipo bool: " << boleano << std::endl;
+    std::cout << "tipo double: " << num2 << std::endl;
+    std::cout << "tipo short: " << num3 << std::endl;
+    std::cout << "tipo long: " << num4 << std::endl;
+    std::cout << "tipo long long: " << num5 << std::endl;
+    std::cout << "tipo unsigned int: " << num6 << std::endl;
+
+    return 0;
+}
+
+Algoritmo questão 2:
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+ int num1, num2;
+ cout << "informe um numero: ";
+ cin >> num1;
+ cout << "informe um numero: ";
+ cin >> num2;
+
+ cout << "Soma: " << num1 + num2 <<endl;
+ cout << "Subtracao: " << num1 - num2 <<endl;
+ cout << "Multiplicacao: " <<num1 * num2 <<endl;
+ cout << "Divisao: " <<num1 / num2 <<endl;
+
+ return 0;
+}
+
+Algoritmo questão 3:
+// Example program
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float raio, area;
+    const float PI = 3.14;
+  
+    cout << "informe o valor do raio do circulo"<<endl ;
+    cin >> raio;
+    area = PI * raio*raio;
+    
+    cout <<"Area do circulo e "<< area <<endl;
+    return 0;
+}
+
+
+Algoritmo questão 4:
+// Example program
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num1 = 10, num4= 3;
+    float num2 = 10, num5= 3;
+    double num3 = 10, num6 = 3;
+    
+    cout<< "int "<< num1/num4<<endl;
+    cout<< "float "<< num2/num5<<endl;
+    cout<< "double "<< num3/num6<<endl;
+    
+    return 0;
+}
+
+
+algoritmo questao 5:
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    std::string nome;
+    int idade;
+    
+    cout<<"Informe o seu nome: ";
+    cin>> nome ;
+    cout<<"Informe sua idade: ";
+    cin>> idade;
+    
+    cout<< nome<<" tem "<<idade<<" anos de idade."<<endl;
+
+    return 0;
+}
+
+
+
+algoritmo questao 6:
+#include <iostream>
+using namespace std;
+
+int parametro(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int num1, num2;
+   
+    cout << "Digite o primeiro numero: " ;
+    cin >> num1;
+
+    cout << "Digite o segundo numero: ";
+    cin >> num2;
+
+    int soma = parametro(num1, num2);
+
+    cout << "A soma dos numeros é " << soma << endl;
+
+    return 0;
+}
+
+
+algoritmo questao 7:
+#include <iostream>
+using namespace std ;
+
+  void ehpar (int num1){
+      if (num1 % 2 == 0){
+          cout<< "true "<<endl;
+      }else{
+          cout<<" false"<< endl;
+      }
+  }
+
+int main() {
+    int num;
+    
+    cout<<" informe um numero: "<<endl;
+    cin>> num;
+    
+    ehpar(num);
+    return 0;
+}
+
+
+Algoritmo questao 8:
+#include <iostream>
+using namespace std;
+   void mostrarMensagem(){
+       cout<<"Seja bem vindo.";
+   }
+
+int main() {
+    mostrarMensagem();
+    return 0;
+}
+
+
+Algoritmo questao 9:
+#include <iostream>
+using namespace std;
+   int quadrado (int num1){
+       return num1*num1;
+   }
+
+int main() {
+    int num;
+    cout<< "Informe um numero: "<<endl;
+    cin >> num;
+    
+    int resultado = quadrado(num);
+    cout<< "o quadrado de "<< num << " e "<<resultado<<endl;
+    return 0;
+}
+
+
+
+Algoritmo questao 10:
+#include <iostream>
+using namespace std;
+   void comparacao (float num1, float num2){
+       if (num1>num2){
+           cout<< num1 <<" e maior que "<< num2<<endl;
+       }else{
+           cout<< num2 <<" e maior que "<<num1<<endl;
+       }
+   }
+
+int main() {
+    float valor1, valor2;
+    
+    cout<<"Informe o primeiro numero: ";
+    cin>> valor1;
+    cout<<"Informe o segundo nunero: ";
+    cin>> valor2;
+    
+    comparacao(valor1,valor2);
+    return 0;
+}
+
+
+Algoritmo questao 11:
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num1 = 10;
+    int *ptr;    
+    ptr = &a;
+    
+    cout<< " Valor da variavel: "<<a <<endl;
+    cout<<" Endereço da variavel: "<<ptr <<endl;
+    return 0;
+}
+
+
+
+Algoritmo questao 12:
+#include <iostream>
+using namespace std;
+    int pont (int num){
+        int *ptr = &num;
+        *ptr = *ptr * 2;
+        cout<< *ptr <<endl;
+    }
+
+int main() {
+    int num1;
+    
+    cout<<"informe um valor: "<<endl;
+    cin>>num1;
+    
+    pont(num1);
+    return 0;
+}
+
+
+
+Algoritmo questao 13:
+#include <iostream>
+using namespace std;
+
+int main() {
+    int subst = 0;
+    int a;
+    int *ptr1=&a;
+    int b;
+    int *ptr2=&b;
+    
+    cout<<"Informe o primeiro valor: "<<endl;
+    cin>>a;
+    cout<<"Informe o segundo valor: "<<endl;
+    cin>>b;
+    cout<<"Os valores fornecidos sao os seguintes: primeiro valor e "<<a<<" o segundo valor e "<<b<<endl;
+    subst = *ptr1;
+    *ptr1 = *ptr2;
+    *ptr2 = subst;
+    
+    cout<<"Apos a troca os valores fornecidos sao: o primeiro ficou como "<<*ptr1<<" e o segundo como "<< *ptr2<<endl;
+    return 0;
+}
+Algoritmo questão 14:
+#include <iostream>
+using namespace std;
+
+void exibirVetor(int* v, int tamanho) {
+    for (int i = 0; i < tamanho; i++)
+        cout << v[i] << " ";
+    cout << endl;
+}
+
+int main() {
+    int vetor[5] = {1, 2, 3, 4, 5};
+    exibirVetor(vetor, 5);
+    return 0;
+}
+
+
+Algoritmo questao 15:
+#include <iostream>
+using namespace std;
+
+int main() {
+    float nota;
+    float* ptrNota = &nota;
+
+    cout << "Informe a nota: ";
+    cin >> *ptrNota;
+
+    if (*ptrNota >= 0 && *ptrNota <= 10) {
+        if (*ptrNota >= 7) {
+            cout << "Aluno foi aprovado" << endl;
+        } else if (*ptrNota > 4) {
+            cout << "Aluno vai pra prova final" << endl;
+        } else {
+            cout << "Aluno esta reprovado" << endl;
+        }
+    } else {
+        cout << "Nota inválida" << endl;
+    }
+
+    return 0;
+}
+
+
+Algoritmo da questao 16:
+#include <iostream>
+using namespace std;
+    void trocar(int &a, int &b){
+        int caixa = 0;
+        caixa = a;
+        a = b;
+        b = caixa;
+        cout<<"Os valores foram trocados \n"<<"Agora num1 é "<<b<<" e num2 é "<<a<<endl;
+    }
+
+int main() {
+    int num1, num2;
+
+    cout<<"Informe um valor: "<<endl;
+    cin>> num1;
+    cout<<"Informe outro valor: "<<endl;
+    cin>> num2;
+    cout<<"Os valores fornecidos foram respectivamente "<<num1<<" e "<<num2<<endl;
+    
+    trocar(num1,num2);
+
+    return 0;
+}
+
+Algoritmo questao 17:
+#include <iostream>
+using namespace std;
+    
+    void troca (int a,int& b){
+        a = a * 3;
+        b = b * 3;
+        cout<< "valores alterados agora pricipal e "<<a<<", e o valor de referencia e "<<b<<endl;
+    }
+int main() {
+    int valor, referencia;
+
+    cout<<"Informe o valor pricipal: "<<endl;
+    cin>> valor;
+    cout<<"Informe o valor referencia: "<<endl;
+    cin>> referencia;
+    cout<<"os valores fornecidos foram principal: "<<valor<<" referencia: "<<referencia<<endl;
+
+    troca(valor,referencia);
+    
+    return 0;
+}
+
+
+
+Algoritmo questao 18:
+#include <iostream>
+using namespace std;
+  void incrementar (int *p){
+      *p = *p + 1;
+      cout<<"O valor apos a incrementaçao é "<< *p<<endl;
+  }
+
+int main() {
+    int num1;
+    cout<<"Informe um valor: "<<endl;
+    cin>> num1;
+    int ptr = num1;
+    
+    incrementar(&ptr);
+    return 0;
+}
+
+
+Algoritmo questao 19:
+#include <iostream>
+using namespace std;
+  void media (float  n1,float n2,float n3){
+  float media;
+      media = (n1+n2+n3)/3;
+      
+      cout<<"A media do aluno é "<<media<<endl;
+  }
+
+int main() {
+   float nota1,nota2,nota3;
+   
+   cout<<"Informe a primeira nota: "<<endl;
+   cin>>nota1;
+   cout<<"Informe a segunda nota: "<<endl;
+   cin>>nota2;
+   cout<<"Informe a terceira nota: "<<endl;
+   cin>>nota3;
+   
+   media (nota1, nota2, nota3);
+    return 0;
+}
+
+
+
+Algoritmo questao 20:
+#include <iostream>
+#include <string>
+using namespace std;
+  void nota (string nm, float n1){
+   if (n1 >=7){
+      cout<<" O/a "<<nm<<" esta aprovado "<<endl;
+   }else if(n1>4 && n1 < 7){
+      cout<<" O/a "<<nm<<" esta de prova final "<<endl;
+   }else{
+     cout<<"O/a "<<nm<<" esta reprovado "<<endl;
+   }
+  }
+
+int main() {
+   float nota1;
+   string nome;
+
+   cout<<"Informe o nome do aluno: "<<endl;
+   cin>>nome;
+   cout<<"Informe a nota do "<<nome<<" : "<<endl;
+   cin>>nota1;
+
+   nota (nome, nota1);
+return 0;
+}
+
+
+Algoritmo questao 21:
+#include <iostream>
+using namespace std;
+   float area(float alt, float bs){
+    
+    float area = alt * bs;
+    return area;
+  }
+
+int main() {
+   float altura, base;
+   cout<<"Informe o valor da altura do retangulo: "<<endl;
+   cin>>altura;
+   cout<<"Informe o valor da base do retangulo: "<<endl;
+   cin>>base;
+  
+  cout<<"A area do retangulo é "<< area(altura, base)<<endl;
+ return 0;
+}
+
+
+
+Algoritmo questao 22:
+#include <iostream>
+using namespace std;
+
+int main() {
+   float salario, resultado;
+   const float bonus = 15.0/100.0;
+   
+   cout<<"Informe o valor do salario: "<<endl;
+   cin>>salario;
+   
+   resultado = salario + (salario * bonus );
+   
+   cout<<"O valor do salario com o bunos sera de "<<resultado<<endl;
+    return 0;
+}
+Algoritmo questão 23:
+#pragma once
+#include <iostream>
+using namespace std;
+
+void mostrarInfo() {
+    cout << "Informacoes do programa." << endl;
+}
+
+Algoritmo questão 24:
+#include <iostream>
+using namespace std;
+
+float mediaVetor(int* v, int tamanho) {
+    int soma = 0;
+    for (int i = 0; i < tamanho; i++)
+        soma += v[i];
+    return (float)soma / tamanho;
+}
+
+int main() {
+    int v[10] = {1,2,3,4,5,6,7,8,9,10};
+    cout << mediaVetor(v, 10) << endl;
+    return 0;
+}
+
+
+Algoritmo questao 25:
+#include <iostream>
+using namespace std;
+   int InvertSinal(int &valor){
+   int resultado;
+       if (valor > 0){
+           resultado = -(valor);
+       }else if(valor<0){
+           resultado = abs(valor);
+       }
+       return resultado;
+   }
+
+int main() {
+    int num1;
+    
+    cout<<"Digite um valor: "<<endl;
+    cin>>num1;
+    
+    cout<< "Trocando os sinais de "<<num1<< " para "<<InvertSinal(num1) <<endl;
+    return 0;
+}
+
+
+Algoritmo questao 26:
+#include <iostream>
+using namespace std;
+
+   void Soma (){
+       float num1, num2, resultado;
+       cout<<"Informe o primeiro valor: "<<endl;
+       cin>>num1;
+       cout<<"Informe o segundo valor: "<<endl;
+       cin>>num2;
+       
+       resultado = num1 + num2;
+       cout<<"Resultado da opercão "<<num1<<" + "<<num2<<" = "<<resultado<<endl;
+   }
+   void Subtracao (){
+       float num1, num2, resultado;
+       cout<<"Informe o primeiro valor: "<<endl;
+       cin>>num1;
+       cout<<"Informe o segundo valor: "<<endl;
+       cin>>num2;
+       
+       resultado = num1 - num2;
+       cout<<"Resultado da opercão "<<num1<<" - "<<num2<<" = "<<resultado<<endl;
+   }
+   void Multiplicacao (){
+       float num1, num2, resultado;
+       cout<<"Informe o primeiro valor: "<<endl;
+       cin>>num1;
+       cout<<"Informe o segundo valor: "<<endl;
+       cin>>num2;
+       
+       resultado = num1 * num2;
+       cout<<"Resultado da opercão "<<num1<<" * "<<num2<<" = "<<resultado<<endl;
+   }
+   void menu (){
+       int operacao;
+       cout<<"Operaçoes: "<<endl;
+       cout<<"1• Soma "<<endl;
+       cout<<"2• Subtraçao "<<endl;
+       cout<<"3° Multiplicaçao "<<endl;
+       
+       cout<<"Digite o numero da operaçao desejada: "<<endl;
+       cin>> operacao;
+       
+       if (operacao == 1){
+           Soma();
+       }else if(operacao == 2){
+           Subtracao();
+       }else if(operacao == 3){
+           Multiplicacao();
+       }
+   }
+   
+
+int main() {
+    menu();
+
+    return 0;
+}
+
+algoritmo questão 27:
+#include <iostream>
+using namespace std;
+
+float saldo = 1000;
+const float LIMITE_SAQUE = 500;
+
+void sacar(float valor) {
+    if (valor <= saldo && valor <= LIMITE_SAQUE)
+        saldo -= valor;
+}
+
+void depositar(float valor) {
+    saldo += valor;
+}
+
+void consultarSaldo() {
+    cout << "Saldo: " << saldo << endl;
+}
+
+int main() {
+    sacar(200);
+    depositar(300);
+    consultarSaldo();
+    return 0;
+}
+
+
+algoritmo questão 28:
+#include <iostream>
+using namespace std;
+
+struct Pessoa {
+    string nome;
+    int idade;
+    float altura;
+};
+
+void imprimir(Pessoa* p) {
+    cout << "Nome: " << p->nome << ", Idade: " << p->idade << ", Altura: " << p->altura << endl;
+}
+
+int main() {
+    Pessoa p = {"Maria", 25, 1.65f};
+    imprimir(&p);
+    return 0;
+}
+algoritmo questão 29:
+
+#include <iostream>
+using namespace std;
+
+template <typename T>
+void trocar(T* a, T* b) {
+    T temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int main() {
+    int x = 1, y = 2;
+    trocar(&x, &y);
+    cout << x << " " << y << endl;
+
+    float f1 = 3.5, f2 = 7.2;
+    trocar(&f1, &f2);
+    cout << f1 << " " << f2 << endl;
+
+    return 0;
+}
+
+algoritmo questão 30:
+
+#pragma once
+#include <iostream>
+using namespace std;
+
+void mostrar() {
+    cout << "Funcao com pragma once" << endl;
+}
+    double num2 = 8.82738474;
+    short int num3 = 32767;
+    long int num4 = 2147483647;
+    long long int num5 = 9223372036854775807;
+    unsigned int num6 = 4294967295;
+
+    std::cout << "tipo int: " << idade << std::endl;
+    std::cout << "tipo string: " << nome << std::endl;
+    std::cout << "tipo char: " << carac << std::endl;
+    std::cout << "tipo float: " << num1 << std::endl;
+    std::cout << "tipo bool: " << boleano << std::endl;
+    std::cout << "tipo double: " << num2 << std::endl;
+    std::cout << "tipo short: " << num3 << std::endl;
+    std::cout << "tipo long: " << num4 << std::endl;
+    std::cout << "tipo long long: " << num5 << std::endl;
+    std::cout << "tipo unsigned int: " << num6 << std::endl;
+
+    return 0;
+}
+
+Algoritmo questão 2:
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+ int num1, num2;
+ cout << "informe um numero: ";
+ cin >> num1;
+ cout << "informe um numero: ";
+ cin >> num2;
+
+ cout << "Soma: " << num1 + num2 <<endl;
+ cout << "Subtracao: " << num1 - num2 <<endl;
+ cout << "Multiplicacao: " <<num1 * num2 <<endl;
+ cout << "Divisao: " <<num1 / num2 <<endl;
+
+ return 0;
+}
+
+Algoritmo questão 3:
+// Example program
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float raio, area;
+    const float PI = 3.14;
+  
+    cout << "informe o valor do raio do circulo"<<endl ;
+    cin >> raio;
+    area = PI * raio*raio;
+    
+    cout <<"Area do circulo e "<< area <<endl;
+    return 0;
+}
+
+
+Algoritmo questão 4:
+// Example program
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num1 = 10, num4= 3;
+    float num2 = 10, num5= 3;
+    double num3 = 10, num6 = 3;
+    
+    cout<< "int "<< num1/num4<<endl;
+    cout<< "float "<< num2/num5<<endl;
+    cout<< "double "<< num3/num6<<endl;
+    
+    return 0;
+}
+
+
+algoritmo questao 5:
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    std::string nome;
+    int idade;
+    
+    cout<<"Informe o seu nome: ";
+    cin>> nome ;
+    cout<<"Informe sua idade: ";
+    cin>> idade;
+    
+    cout<< nome<<" tem "<<idade<<" anos de idade."<<endl;
+
+    return 0;
+}
+
+
+
+algoritmo questao 6:
+#include <iostream>
+using namespace std;
+
+int parametro(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int num1, num2;
+   
+    cout << "Digite o primeiro numero: " ;
+    cin >> num1;
+
+    cout << "Digite o segundo numero: ";
+    cin >> num2;
+
+    int soma = parametro(num1, num2);
+
+    cout << "A soma dos numeros é " << soma << endl;
+
+    return 0;
+}
+
+
+algoritmo questao 7:
+#include <iostream>
+using namespace std ;
+
+  void ehpar (int num1){
+      if (num1 % 2 == 0){
+          cout<< "true "<<endl;
+      }else{
+          cout<<" false"<< endl;
+      }
+  }
+
+int main() {
+    int num;
+    
+    cout<<" informe um numero: "<<endl;
+    cin>> num;
+    
+    ehpar(num);
+    return 0;
+}
+
+
+Algoritmo questao 8:
+#include <iostream>
+using namespace std;
+   void mostrarMensagem(){
+       cout<<"Seja bem vindo.";
+   }
+
+int main() {
+    mostrarMensagem();
+    return 0;
+}
+
+
+Algoritmo questao 9:
+#include <iostream>
+using namespace std;
+   int quadrado (int num1){
+       return num1*num1;
+   }
+
+int main() {
+    int num;
+    cout<< "Informe um numero: "<<endl;
+    cin >> num;
+    
+    int resultado = quadrado(num);
+    cout<< "o quadrado de "<< num << " e "<<resultado<<endl;
+    return 0;
+}
+
+
+
+Algoritmo questao 10:
+#include <iostream>
+using namespace std;
+   void comparacao (float num1, float num2){
+       if (num1>num2){
+           cout<< num1 <<" e maior que "<< num2<<endl;
+       }else{
+           cout<< num2 <<" e maior que "<<num1<<endl;
+       }
+   }
+
+int main() {
+    float valor1, valor2;
+    
+    cout<<"Informe o primeiro numero: ";
+    cin>> valor1;
+    cout<<"Informe o segundo nunero: ";
+    cin>> valor2;
+    
+    comparacao(valor1,valor2);
+    return 0;
+}
+
+
+Algoritmo questao 11:
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num1 = 10;
+    int *ptr;    
+    ptr = &a;
+    
+    cout<< " Valor da variavel: "<<a <<endl;
+    cout<<" Endereço da variavel: "<<ptr <<endl;
+    return 0;
+}
+
+
+
+Algoritmo questao 12:
+#include <iostream>
+using namespace std;
+    int pont (int num){
+        int *ptr = &num;
+        *ptr = *ptr * 2;
+        cout<< *ptr <<endl;
+    }
+
+int main() {
+    int num1;
+    
+    cout<<"informe um valor: "<<endl;
+    cin>>num1;
+    
+    pont(num1);
+    return 0;
+}
+
+
+
+Algoritmo questao 13:
+#include <iostream>
+using namespace std;
+
+int main() {
+    int subst = 0;
+    int a;
+    int *ptr1=&a;
+    int b;
+    int *ptr2=&b;
+    
+    cout<<"Informe o primeiro valor: "<<endl;
+    cin>>a;
+    cout<<"Informe o segundo valor: "<<endl;
+    cin>>b;
+    cout<<"Os valores fornecidos sao os seguintes: primeiro valor e "<<a<<" o segundo valor e "<<b<<endl;
+    subst = *ptr1;
+    *ptr1 = *ptr2;
+    *ptr2 = subst;
+    
+    cout<<"Apos a troca os valores fornecidos sao: o primeiro ficou como "<<*ptr1<<" e o segundo como "<< *ptr2<<endl;
+    return 0;
+}
+Algoritmo questão 14:
+#include <iostream>
+using namespace std;
+
+void exibirVetor(int* v, int tamanho) {
+    for (int i = 0; i < tamanho; i++)
+        cout << v[i] << " ";
+    cout << endl;
+}
+
+int main() {
+    int vetor[5] = {1, 2, 3, 4, 5};
+    exibirVetor(vetor, 5);
+    return 0;
+}
+
+
+Algoritmo questao 15:
+#include <iostream>
+using namespace std;
+
+int main() {
+    float nota;
+    float* ptrNota = &nota;
+
+    cout << "Informe a nota: ";
+    cin >> *ptrNota;
+
+    if (*ptrNota >= 0 && *ptrNota <= 10) {
+        if (*ptrNota >= 7) {
+            cout << "Aluno foi aprovado" << endl;
+        } else if (*ptrNota > 4) {
+            cout << "Aluno vai pra prova final" << endl;
+        } else {
+            cout << "Aluno esta reprovado" << endl;
+        }
+    } else {
+        cout << "Nota inválida" << endl;
+    }
+
+    return 0;
+}
+
+
+Algoritmo da questao 16:
+#include <iostream>
+using namespace std;
+    void trocar(int &a, int &b){
+        int caixa = 0;
+        caixa = a;
+        a = b;
+        b = caixa;
+        cout<<"Os valores foram trocados \n"<<"Agora num1 é "<<b<<" e num2 é "<<a<<endl;
+    }
+
+int main() {
+    int num1, num2;
+
+    cout<<"Informe um valor: "<<endl;
+    cin>> num1;
+    cout<<"Informe outro valor: "<<endl;
+    cin>> num2;
+    cout<<"Os valores fornecidos foram respectivamente "<<num1<<" e "<<num2<<endl;
+    
+    trocar(num1,num2);
+
+    return 0;
+}
+
+Algoritmo questao 17:
+#include <iostream>
+using namespace std;
+    
+    void troca (int a,int& b){
+        a = a * 3;
+        b = b * 3;
+        cout<< "valores alterados agora pricipal e "<<a<<", e o valor de referencia e "<<b<<endl;
+    }
+int main() {
+    int valor, referencia;
+
+    cout<<"Informe o valor pricipal: "<<endl;
+    cin>> valor;
+    cout<<"Informe o valor referencia: "<<endl;
+    cin>> referencia;
+    cout<<"os valores fornecidos foram principal: "<<valor<<" referencia: "<<referencia<<endl;
+
+    troca(valor,referencia);
+    
+    return 0;
+}
+
+
+
+Algoritmo questao 18:
+#include <iostream>
+using namespace std;
+  void incrementar (int *p){
+      *p = *p + 1;
+      cout<<"O valor apos a incrementaçao é "<< *p<<endl;
+  }
+
+int main() {
+    int num1;
+    cout<<"Informe um valor: "<<endl;
+    cin>> num1;
+    int ptr = num1;
+    
+    incrementar(&ptr);
+    return 0;
+}
+
+
+Algoritmo questao 19:
+#include <iostream>
+using namespace std;
+  void media (float  n1,float n2,float n3){
+  float media;
+      media = (n1+n2+n3)/3;
+      
+      cout<<"A media do aluno é "<<media<<endl;
+  }
+
+int main() {
+   float nota1,nota2,nota3;
+   
+   cout<<"Informe a primeira nota: "<<endl;
+   cin>>nota1;
+   cout<<"Informe a segunda nota: "<<endl;
+   cin>>nota2;
+   cout<<"Informe a terceira nota: "<<endl;
+   cin>>nota3;
+   
+   media (nota1, nota2, nota3);
+    return 0;
+}
+
+
+
+Algoritmo questao 20:
+#include <iostream>
+#include <string>
+using namespace std;
+  void nota (string nm, float n1){
+   if (n1 >=7){
+      cout<<" O/a "<<nm<<" esta aprovado "<<endl;
+   }else if(n1>4 && n1 < 7){
+      cout<<" O/a "<<nm<<" esta de prova final "<<endl;
+   }else{
+     cout<<"O/a "<<nm<<" esta reprovado "<<endl;
+   }
+  }
+
+int main() {
+   float nota1;
+   string nome;
+
+   cout<<"Informe o nome do aluno: "<<endl;
+   cin>>nome;
+   cout<<"Informe a nota do "<<nome<<" : "<<endl;
+   cin>>nota1;
+
+   nota (nome, nota1);
+return 0;
+}
+
+
+Algoritmo questao 21:
+#include <iostream>
+using namespace std;
+   float area(float alt, float bs){
+    
+    float area = alt * bs;
+    return area;
+  }
+
+int main() {
+   float altura, base;
+   cout<<"Informe o valor da altura do retangulo: "<<endl;
+   cin>>altura;
+   cout<<"Informe o valor da base do retangulo: "<<endl;
+   cin>>base;
+  
+  cout<<"A area do retangulo é "<< area(altura, base)<<endl;
+ return 0;
+}
+
+
+
+Algoritmo questao 22:
+#include <iostream>
+using namespace std;
+
+int main() {
+   float salario, resultado;
+   const float bonus = 15.0/100.0;
+   
+   cout<<"Informe o valor do salario: "<<endl;
+   cin>>salario;
+   
+   resultado = salario + (salario * bonus );
+   
+   cout<<"O valor do salario com o bunos sera de "<<resultado<<endl;
+    return 0;
+}
+Algoritmo questão 23:
+#pragma once
+#include <iostream>
+using namespace std;
+
+void mostrarInfo() {
+    cout << "Informacoes do programa." << endl;
+}
+
+Algoritmo questão 24:
+#include <iostream>
+using namespace std;
+
+float mediaVetor(int* v, int tamanho) {
+    int soma = 0;
+    for (int i = 0; i < tamanho; i++)
+        soma += v[i];
+    return (float)soma / tamanho;
+}
+
+int main() {
+    int v[10] = {1,2,3,4,5,6,7,8,9,10};
+    cout << mediaVetor(v, 10) << endl;
+    return 0;
+}
+
+
+Algoritmo questao 25:
+#include <iostream>
+using namespace std;
+   int InvertSinal(int &valor){
+   int resultado;
+       if (valor > 0){
+           resultado = -(valor);
+       }else if(valor<0){
+           resultado = abs(valor);
+       }
+       return resultado;
+   }
+
+int main() {
+    int num1;
+    
+    cout<<"Digite um valor: "<<endl;
+    cin>>num1;
+    
+    cout<< "Trocando os sinais de "<<num1<< " para "<<InvertSinal(num1) <<endl;
+    return 0;
+}
+
+
+Algoritmo questao 26:
+#include <iostream>
+using namespace std;
+
+   void Soma (){
+       float num1, num2, resultado;
+       cout<<"Informe o primeiro valor: "<<endl;
+       cin>>num1;
+       cout<<"Informe o segundo valor: "<<endl;
+       cin>>num2;
+       
+       resultado = num1 + num2;
+       cout<<"Resultado da opercão "<<num1<<" + "<<num2<<" = "<<resultado<<endl;
+   }
+   void Subtracao (){
+       float num1, num2, resultado;
+       cout<<"Informe o primeiro valor: "<<endl;
+       cin>>num1;
+       cout<<"Informe o segundo valor: "<<endl;
+       cin>>num2;
+       
+       resultado = num1 - num2;
+       cout<<"Resultado da opercão "<<num1<<" - "<<num2<<" = "<<resultado<<endl;
+   }
+   void Multiplicacao (){
+       float num1, num2, resultado;
+       cout<<"Informe o primeiro valor: "<<endl;
+       cin>>num1;
+       cout<<"Informe o segundo valor: "<<endl;
+       cin>>num2;
+       
+       resultado = num1 * num2;
+       cout<<"Resultado da opercão "<<num1<<" * "<<num2<<" = "<<resultado<<endl;
+   }
+   void menu (){
+       int operacao;
+       cout<<"Operaçoes: "<<endl;
+       cout<<"1• Soma "<<endl;
+       cout<<"2• Subtraçao "<<endl;
+       cout<<"3° Multiplicaçao "<<endl;
+       
+       cout<<"Digite o numero da operaçao desejada: "<<endl;
+       cin>> operacao;
+       
+       if (operacao == 1){
+           Soma();
+       }else if(operacao == 2){
+           Subtracao();
+       }else if(operacao == 3){
+           Multiplicacao();
+       }
+   }
+   
+
+int main() {
+    menu();
+
+    return 0;
+}
+
+algoritmo questão 27:
+#include <iostream>
+using namespace std;
+
+float saldo = 1000;
+const float LIMITE_SAQUE = 500;
+
+void sacar(float valor) {
+    if (valor <= saldo && valor <= LIMITE_SAQUE)
+        saldo -= valor;
+}
+
+void depositar(float valor) {
+    saldo += valor;
+}
+
+void consultarSaldo() {
+    cout << "Saldo: " << saldo << endl;
+}
+
+int main() {
+    sacar(200);
+    depositar(300);
+    consultarSaldo();
+    return 0;
+}
+
+
+algoritmo questão 28:
+#include <iostream>
+using namespace std;
+
+struct Pessoa {
+    string nome;
+    int idade;
+    float altura;
+};
+
+void imprimir(Pessoa* p) {
+    cout << "Nome: " << p->nome << ", Idade: " << p->idade << ", Altura: " << p->altura << endl;
+}
+
+int main() {
+    Pessoa p = {"Maria", 25, 1.65f};
+    imprimir(&p);
+    return 0;
+}
+algoritmo questão 29:
+
+#include <iostream>
+using namespace std;
+
+template <typename T>Algoritmo questão 1:
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    int idade = 16;
+    std::string nome = "jao";
+    char carac = 'b';
+    float num1 = 1.77865281;
+    bool boleano = true;
+    double num2 = 8.82738474;
+    short int num3 = 32767;
+    long int num4 = 2147483647;
+    long long int num5 = 9223372036854775807;
+    unsigned int num6 = 4294967295;
+
+    std::cout << "tipo int: " << idade << std::endl;
+    std::cout << "tipo string: " << nome << std::endl;
+    std::cout << "tipo char: " << carac << std::endl;
+    std::cout << "tipo float: " << num1 << std::endl;
+    std::cout << "tipo bool: " << boleano << std::endl;
+    std::cout << "tipo double: " << num2 << std::endl;
+    std::cout << "tipo short: " << num3 << std::endl;
+    std::cout << "tipo long: " << num4 << std::endl;
+    std::cout << "tipo long long: " << num5 << std::endl;
+    std::cout << "tipo unsigned int: " << num6 << std::endl;
+
+    return 0;
+}
+
+Algoritmo questão 2:
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+ int num1, num2;
+ cout << "informe um numero: ";
+ cin >> num1;
+ cout << "informe um numero: ";
+ cin >> num2;
+
+ cout << "Soma: " << num1 + num2 <<endl;
+ cout << "Subtracao: " << num1 - num2 <<endl;
+ cout << "Multiplicacao: " <<num1 * num2 <<endl;
+ cout << "Divisao: " <<num1 / num2 <<endl;
+
+ return 0;
+}
+
+Algoritmo questão 3:
+// Example program
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float raio, area;
+    const float PI = 3.14;
+  
+    cout << "informe o valor do raio do circulo"<<endl ;
+    cin >> raio;
+    area = PI * raio*raio;
+    
+    cout <<"Area do circulo e "<< area <<endl;
+    return 0;
+}
+
+
+Algoritmo questão 4:
+// Example program
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num1 = 10, num4= 3;
+    float num2 = 10, num5= 3;
+    double num3 = 10, num6 = 3;
+    
+    cout<< "int "<< num1/num4<<endl;
+    cout<< "float "<< num2/num5<<endl;
+    cout<< "double "<< num3/num6<<endl;
+    
+    return 0;
+}
+
+
+algoritmo questao 5:
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    std::string nome;
+    int idade;
+    
+    cout<<"Informe o seu nome: ";
+    cin>> nome ;
+    cout<<"Informe sua idade: ";
+    cin>> idade;
+    
+    cout<< nome<<" tem "<<idade<<" anos de idade."<<endl;
+
+    return 0;
+}
+
+
+
+algoritmo questao 6:
+#include <iostream>
+using namespace std;
+
+int parametro(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int num1, num2;
+   
+    cout << "Digite o primeiro numero: " ;
+    cin >> num1;
+
+    cout << "Digite o segundo numero: ";
+    cin >> num2;
+
+    int soma = parametro(num1, num2);
+
+    cout << "A soma dos numeros é " << soma << endl;
+
+    return 0;
+}
+
+
+algoritmo questao 7:
+#include <iostream>
+using namespace std ;
+
+  void ehpar (int num1){
+      if (num1 % 2 == 0){
+          cout<< "true "<<endl;
+      }else{
+          cout<<" false"<< endl;
+      }
+  }
+
+int main() {
+    int num;
+    
+    cout<<" informe um numero: "<<endl;
+    cin>> num;
+    
+    ehpar(num);
+    return 0;
+}
+
+
+Algoritmo questao 8:
+#include <iostream>
+using namespace std;
+   void mostrarMensagem(){
+       cout<<"Seja bem vindo.";
+   }
+
+int main() {
+    mostrarMensagem();
+    return 0;
+}
+
+
+Algoritmo questao 9:
+#include <iostream>
+using namespace std;
+   int quadrado (int num1){
+       return num1*num1;
+   }
+
+int main() {
+    int num;
+    cout<< "Informe um numero: "<<endl;
+    cin >> num;
+    
+    int resultado = quadrado(num);
+    cout<< "o quadrado de "<< num << " e "<<resultado<<endl;
+    return 0;
+}
+
+
+
+Algoritmo questao 10:
+#include <iostream>
+using namespace std;
+   void comparacao (float num1, float num2){
+       if (num1>num2){
+           cout<< num1 <<" e maior que "<< num2<<endl;
+       }else{
+           cout<< num2 <<" e maior que "<<num1<<endl;
+       }
+   }
+
+int main() {
+    float valor1, valor2;
+    
+    cout<<"Informe o primeiro numero: ";
+    cin>> valor1;
+    cout<<"Informe o segundo nunero: ";
+    cin>> valor2;
+    
+    comparacao(valor1,valor2);
+    return 0;
+}
+
+
+Algoritmo questao 11:
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num1 = 10;
+    int *ptr;    
+    ptr = &a;
+    
+    cout<< " Valor da variavel: "<<a <<endl;
+    cout<<" Endereço da variavel: "<<ptr <<endl;
+    return 0;
+}
+
+
+
+Algoritmo questao 12:
+#include <iostream>
+using namespace std;
+    int pont (int num){
+        int *ptr = &num;
+        *ptr = *ptr * 2;
+        cout<< *ptr <<endl;
+    }
+
+int main() {
+    int num1;
+    
+    cout<<"informe um valor: "<<endl;
+    cin>>num1;
+    
+    pont(num1);
+    return 0;
+}
+
+
+
+Algoritmo questao 13:
+#include <iostream>
+using namespace std;
+
+int main() {
+    int subst = 0;
+    int a;
+    int *ptr1=&a;
+    int b;
+    int *ptr2=&b;
+    
+    cout<<"Informe o primeiro valor: "<<endl;
+    cin>>a;
+    cout<<"Informe o segundo valor: "<<endl;
+    cin>>b;
+    cout<<"Os valores fornecidos sao os seguintes: primeiro valor e "<<a<<" o segundo valor e "<<b<<endl;
+    subst = *ptr1;
+    *ptr1 = *ptr2;
+    *ptr2 = subst;
+    
+    cout<<"Apos a troca os valores fornecidos sao: o primeiro ficou como "<<*ptr1<<" e o segundo como "<< *ptr2<<endl;
+    return 0;
+}
+Algoritmo questão 14:
+#include <iostream>
+using namespace std;
+
+void exibirVetor(int* v, int tamanho) {
+    for (int i = 0; i < tamanho; i++)
+        cout << v[i] << " ";
+    cout << endl;
+}
+
+int main() {
+    int vetor[5] = {1, 2, 3, 4, 5};
+    exibirVetor(vetor, 5);
+    return 0;
+}
+
+
+Algoritmo questao 15:
+#include <iostream>
+using namespace std;
+
+int main() {
+    float nota;
+    float* ptrNota = &nota;
+
+    cout << "Informe a nota: ";
+    cin >> *ptrNota;
+
+    if (*ptrNota >= 0 && *ptrNota <= 10) {
+        if (*ptrNota >= 7) {
+            cout << "Aluno foi aprovado" << endl;
+        } else if (*ptrNota > 4) {
+            cout << "Aluno vai pra prova final" << endl;
+        } else {
+            cout << "Aluno esta reprovado" << endl;
+        }
+    } else {
+        cout << "Nota inválida" << endl;
+    }
+
+    return 0;
+}
+
+
+Algoritmo da questao 16:
+#include <iostream>
+using namespace std;
+    void trocar(int &a, int &b){
+        int caixa = 0;
+        caixa = a;
+        a = b;
+        b = caixa;
+        cout<<"Os valores foram trocados \n"<<"Agora num1 é "<<b<<" e num2 é "<<a<<endl;
+    }
+
+int main() {
+    int num1, num2;
+
+    cout<<"Informe um valor: "<<endl;
+    cin>> num1;
+    cout<<"Informe outro valor: "<<endl;
+    cin>> num2;
+    cout<<"Os valores fornecidos foram respectivamente "<<num1<<" e "<<num2<<endl;
+    
+    trocar(num1,num2);
+
+    return 0;
+}
+
+Algoritmo questao 17:
+#include <iostream>
+using namespace std;
+    
+    void troca (int a,int& b){
+        a = a * 3;
+        b = b * 3;
+        cout<< "valores alterados agora pricipal e "<<a<<", e o valor de referencia e "<<b<<endl;
+    }
+int main() {
+    int valor, referencia;
+
+    cout<<"Informe o valor pricipal: "<<endl;
+    cin>> valor;
+    cout<<"Informe o valor referencia: "<<endl;
+    cin>> referencia;
+    cout<<"os valores fornecidos foram principal: "<<valor<<" referencia: "<<referencia<<endl;
+
+    troca(valor,referencia);
+    
+    return 0;
+}
+
+
+
+Algoritmo questao 18:
+#include <iostream>
+using namespace std;
+  void incrementar (int *p){
+      *p = *p + 1;
+      cout<<"O valor apos a incrementaçao é "<< *p<<endl;
+  }
+
+int main() {
+    int num1;
+    cout<<"Informe um valor: "<<endl;
+    cin>> num1;
+    int ptr = num1;
+    
+    incrementar(&ptr);
+    return 0;
+}
+
+
+Algoritmo questao 19:
+#include <iostream>
+using namespace std;
+  void media (float  n1,float n2,float n3){
+  float media;
+      media = (n1+n2+n3)/3;
+      
+      cout<<"A media do aluno é "<<media<<endl;
+  }
+
+int main() {
+   float nota1,nota2,nota3;
+   
+   cout<<"Informe a primeira nota: "<<endl;
+   cin>>nota1;
+   cout<<"Informe a segunda nota: "<<endl;
+   cin>>nota2;
+   cout<<"Informe a terceira nota: "<<endl;
+   cin>>nota3;
+   
+   media (nota1, nota2, nota3);
+    return 0;
+}
+
+
+
+Algoritmo questao 20:
+#include <iostream>
+#include <string>
+using namespace std;
+  void nota (string nm, float n1){
+   if (n1 >=7){
+      cout<<" O/a "<<nm<<" esta aprovado "<<endl;
+   }else if(n1>4 && n1 < 7){
+      cout<<" O/a "<<nm<<" esta de prova final "<<endl;
+   }else{
+     cout<<"O/a "<<nm<<" esta reprovado "<<endl;
+   }
+  }
+
+int main() {
+   float nota1;
+   string nome;
+
+   cout<<"Informe o nome do aluno: "<<endl;
+   cin>>nome;
+   cout<<"Informe a nota do "<<nome<<" : "<<endl;
+   cin>>nota1;
+
+   nota (nome, nota1);
+return 0;
+}
+
+
+Algoritmo questao 21:
+#include <iostream>
+using namespace std;
+   float area(float alt, float bs){
+    
+    float area = alt * bs;
+    return area;
+  }
+
+int main() {
+   float altura, base;
+   cout<<"Informe o valor da altura do retangulo: "<<endl;
+   cin>>altura;
+   cout<<"Informe o valor da base do retangulo: "<<endl;
+   cin>>base;
+  
+  cout<<"A area do retangulo é "<< area(altura, base)<<endl;
+ return 0;
+}
+
+
+
+Algoritmo questao 22:
+#include <iostream>
+using namespace std;
+
+int main() {
+   float salario, resultado;
+   const float bonus = 15.0/100.0;
+   
+   cout<<"Informe o valor do salario: "<<endl;
+   cin>>salario;
+   
+   resultado = salario + (salario * bonus );
+   
+   cout<<"O valor do salario com o bunos sera de "<<resultado<<endl;
+    return 0;
+}
+Algoritmo questão 23:
+#pragma once
+#include <iostream>
+using namespace std;
+
+void mostrarInfo() {
+    cout << "Informacoes do programa." << endl;
+}
+
+Algoritmo questão 24:
+#include <iostream>
+using namespace std;
+
+float mediaVetor(int* v, int tamanho) {
+    int soma = 0;
+    for (int i = 0; i < tamanho; i++)
+        soma += v[i];
+    return (float)soma / tamanho;
+}
+
+int main() {
+    int v[10] = {1,2,3,4,5,6,7,8,9,10};
+    cout << mediaVetor(v, 10) << endl;
+    return 0;
+}
+
+
+Algoritmo questao 25:
+#include <iostream>
+using namespace std;
+   int InvertSinal(int &valor){
+   int resultado;
+       if (valor > 0){
+           resultado = -(valor);
+       }else if(valor<0){
+           resultado = abs(valor);
+       }
+       return resultado;
+   }
+
+int main() {
+    int num1;
+    
+    cout<<"Digite um valor: "<<endl;
+    cin>>num1;
+    
+    cout<< "Trocando os sinais de "<<num1<< " para "<<InvertSinal(num1) <<endl;
+    return 0;
+}
+
+
+Algoritmo questao 26:
+#include <iostream>
+using namespace std;
+
+   void Soma (){
+       float num1, num2, resultado;
+       cout<<"Informe o primeiro valor: "<<endl;
+       cin>>num1;
+       cout<<"Informe o segundo valor: "<<endl;
+       cin>>num2;
+       
+       resultado = num1 + num2;
+       cout<<"Resultado da opercão "<<num1<<" + "<<num2<<" = "<<resultado<<endl;
+   }
+   void Subtracao (){
+       float num1, num2, resultado;
+       cout<<"Informe o primeiro valor: "<<endl;
+       cin>>num1;
+       cout<<"Informe o segundo valor: "<<endl;
+       cin>>num2;
+       
+       resultado = num1 - num2;
+       cout<<"Resultado da opercão "<<num1<<" - "<<num2<<" = "<<resultado<<endl;
+   }
+   void Multiplicacao (){
+       float num1, num2, resultado;
+       cout<<"Informe o primeiro valor: "<<endl;
+       cin>>num1;
+       cout<<"Informe o segundo valor: "<<endl;
+       cin>>num2;
+       
+       resultado = num1 * num2;
+       cout<<"Resultado da opercão "<<num1<<" * "<<num2<<" = "<<resultado<<endl;
+   }
+   void menu (){
+       int operacao;
+       cout<<"Operaçoes: "<<endl;
+       cout<<"1• Soma "<<endl;
+       cout<<"2• Subtraçao "<<endl;
+       cout<<"3° Multiplicaçao "<<endl;
+       
+       cout<<"Digite o numero da operaçao desejada: "<<endl;
+       cin>> operacao;
+       
+       if (operacao == 1){
+           Soma();
+       }else if(operacao == 2){
+           Subtracao();
+       }else if(operacao == 3){
+           Multiplicacao();
+       }
+   }
+   
+
+int main() {
+    menu();
+
+    return 0;
+}
+
+algoritmo questão 27:
+#include <iostream>
+using namespace std;
+
+float saldo = 1000;
+const float LIMITE_SAQUE = 500;
+
+void sacar(float valor) {
+    if (valor <= saldo && valor <= LIMITE_SAQUE)
+        saldo -= valor;
+}
+
+void depositar(float valor) {
+    saldo += valor;
+}
+
+void consultarSaldo() {
+    cout << "Saldo: " << saldo << endl;
+}
+
+int main() {
+    sacar(200);
+    depositar(300);
+    consultarSaldo();
+    return 0;
+}
+
+
+algoritmo questão 28:
+#include <iostream>
+using namespace std;
+
+struct Pessoa {
+    string nome;
+    int idade;
+    float altura;
+};
+
+void imprimir(Pessoa* p) {
+    cout << "Nome: " << p->nome << ", Idade: " << p->idade << ", Altura: " << p->altura << endl;
+}
+
+int main() {
+    Pessoa p = {"Maria", 25, 1.65f};
+    imprimir(&p);
+    return 0;
+}
+algoritmo questão 29:
+
+#include <iostream>
+using namespace std;
+
+template <typename T>
+void trocar(T* a, T* b) {
+    T temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int main() {
+    int x = 1, y = 2;
+    trocar(&x, &y);
+    cout << x << " " << y << endl;
+
+    float f1 = 3.5, f2 = 7.2;
+    trocar(&f1, &f2);
+    cout << f1 << " " << f2 << endl;
+
+    return 0;
+}
+
+algoritmo questão 30:
+
+#pragma once
+#include <iostream>
+using namespace std;
+
+void mostrar() {
+    cout << "Funcao com pragma once" << endl;
+}Algoritmo questão 1:
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    int idade = 16;
+    std::string nome = "jao";
+    char carac = 'b';
+    float num1 = 1.77865281;
+    bool boleano = true;
+    double num2 = 8.82738474;
+    short int num3 = 32767;
+    long int num4 = 2147483647;
+    long long int num5 = 9223372036854775807;
+    unsigned int num6 = 4294967295;
+
+    std::cout << "tipo int: " << idade << std::endl;
+    std::cout << "tipo string: " << nome << std::endl;
+    std::cout << "tipo char: " << carac << std::endl;
+    std::cout << "tipo float: " << num1 << std::endl;
+    std::cout << "tipo bool: " << boleano << std::endl;
+    std::cout << "tipo double: " << num2 << std::endl;
+    std::cout << "tipo short: " << num3 << std::endl;
+    std::cout << "tipo long: " << num4 << std::endl;
+    std::cout << "tipo long long: " << num5 << std::endl;
+    std::cout << "tipo unsigned int: " << num6 << std::endl;
+
+    return 0;
+}
+
+Algoritmo questão 2:
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+ int num1, num2;
+ cout << "informe um numero: ";
+ cin >> num1;
+ cout << "informe um numero: ";
+ cin >> num2;
+
+ cout << "Soma: " << num1 + num2 <<endl;
+ cout << "Subtracao: " << num1 - num2 <<endl;
+ cout << "Multiplicacao: " <<num1 * num2 <<endl;
+ cout << "Divisao: " <<num1 / num2 <<endl;
+
+ return 0;
+}
+
+Algoritmo questão 3:
+// Example program
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float raio, area;
+    const float PI = 3.14;
+  
+    cout << "informe o valor do raio do circulo"<<endl ;
+    cin >> raio;
+    area = PI * raio*raio;
+    
+    cout <<"Area do circulo e "<< area <<endl;
+    return 0;
+}
+
+
+Algoritmo questão 4:
+// Example program
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num1 = 10, num4= 3;
+    float num2 = 10, num5= 3;
+    double num3 = 10, num6 = 3;
+    
+    cout<< "int "<< num1/num4<<endl;
+    cout<< "float "<< num2/num5<<endl;
+    cout<< "double "<< num3/num6<<endl;
+    
+    return 0;
+}
+
+
+algoritmo questao 5:
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    std::string nome;
+    int idade;
+    
+    cout<<"Informe o seu nome: ";
+    cin>> nome ;
+    cout<<"Informe sua idade: ";
+    cin>> idade;
+    
+    cout<< nome<<" tem "<<idade<<" anos de idade."<<endl;
+
+    return 0;
+}
+
+
+
+algoritmo questao 6:
+#include <iostream>
+using namespace std;
+
+int parametro(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int num1, num2;
+   
+    cout << "Digite o primeiro numero: " ;
+    cin >> num1;
+
+    cout << "Digite o segundo numero: ";
+    cin >> num2;
+
+    int soma = parametro(num1, num2);
+
+    cout << "A soma dos numeros é " << soma << endl;
+
+    return 0;
+}
+
+
+algoritmo questao 7:
+#include <iostream>
+using namespace std ;
+
+  void ehpar (int num1){
+      if (num1 % 2 == 0){
+          cout<< "true "<<endl;
+      }else{
+          cout<<" false"<< endl;
+      }
+  }
+
+int main() {
+    int num;
+    
+    cout<<" informe um numero: "<<endl;
+    cin>> num;
+    
+    ehpar(num);
+    return 0;
+}
+
+
+Algoritmo questao 8:
+#include <iostream>
+using namespace std;
+   void mostrarMensagem(){
+       cout<<"Seja bem vindo.";
+   }
+
+int main() {
+    mostrarMensagem();
+    return 0;
+}
+
+
+Algoritmo questao 9:
+#include <iostream>
+using namespace std;
+   int quadrado (int num1){
+       return num1*num1;
+   }
+
+int main() {
+    int num;
+    cout<< "Informe um numero: "<<endl;
+    cin >> num;
+    
+    int resultado = quadrado(num);
+    cout<< "o quadrado de "<< num << " e "<<resultado<<endl;
+    return 0;
+}
+
+
+
+Algoritmo questao 10:
+#include <iostream>
+using namespace std;
+   void comparacao (float num1, float num2){
+       if (num1>num2){
+           cout<< num1 <<" e maior que "<< num2<<endl;
+       }else{
+           cout<< num2 <<" e maior que "<<num1<<endl;
+       }
+   }
+
+int main() {
+    float valor1, valor2;
+    
+    cout<<"Informe o primeiro numero: ";
+    cin>> valor1;
+    cout<<"Informe o segundo nunero: ";
+    cin>> valor2;
+    
+    comparacao(valor1,valor2);
+    return 0;
+}
+
+
+Algoritmo questao 11:
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num1 = 10;
+    int *ptr;    
+    ptr = &a;
+    
+    cout<< " Valor da variavel: "<<a <<endl;
+    cout<<" Endereço da variavel: "<<ptr <<endl;
+    return 0;
+}
+
+
+
+Algoritmo questao 12:
+#include <iostream>
+using namespace std;
+    int pont (int num){
+        int *ptr = &num;
+        *ptr = *ptr * 2;
+        cout<< *ptr <<endl;
+    }
+
+int main() {
+    int num1;
+    
+    cout<<"informe um valor: "<<endl;
+    cin>>num1;
+    
+    pont(num1);
+    return 0;
+}
+
+
+
+Algoritmo questao 13:
+#include <iostream>
+using namespace std;
+
+int main() {
+    int subst = 0;
+    int a;
+    int *ptr1=&a;
+    int b;
+    int *ptr2=&b;
+    
+    cout<<"Informe o primeiro valor: "<<endl;
+    cin>>a;
+    cout<<"Informe o segundo valor: "<<endl;
+    cin>>b;
+    cout<<"Os valores fornecidos sao os seguintes: primeiro valor e "<<a<<" o segundo valor e "<<b<<endl;
+    subst = *ptr1;
+    *ptr1 = *ptr2;
+    *ptr2 = subst;
+    
+    cout<<"Apos a troca os valores fornecidos sao: o primeiro ficou como "<<*ptr1<<" e o segundo como "<< *ptr2<<endl;
+    return 0;
+}
+Algoritmo questão 14:
+#include <iostream>
+using namespace std;
+
+void exibirVetor(int* v, int tamanho) {
+    for (int i = 0; i < tamanho; i++)
+        cout << v[i] << " ";
+    cout << endl;
+}
+
+int main() {
+    int vetor[5] = {1, 2, 3, 4, 5};
+    exibirVetor(vetor, 5);
+    return 0;
+}
+
+
+Algoritmo questao 15:
+#include <iostream>
+using namespace std;
+
+int main() {
+    float nota;
+    float* ptrNota = &nota;
+
+    cout << "Informe a nota: ";
+    cin >> *ptrNota;
+
+    if (*ptrNota >= 0 && *ptrNota <= 10) {
+        if (*ptrNota >= 7) {
+            cout << "Aluno foi aprovado" << endl;
+        } else if (*ptrNota > 4) {
+            cout << "Aluno vai pra prova final" << endl;
+        } else {
+            cout << "Aluno esta reprovado" << endl;
+        }
+    } else {
+        cout << "Nota inválida" << endl;
+    }
+
+    return 0;
+}
+
+
+Algoritmo da questao 16:
+#include <iostream>
+using namespace std;
+    void trocar(int &a, int &b){
+        int caixa = 0;
+        caixa = a;
+        a = b;
+        b = caixa;
+        cout<<"Os valores foram trocados \n"<<"Agora num1 é "<<b<<" e num2 é "<<a<<endl;
+    }
+
+int main() {
+    int num1, num2;
+
+    cout<<"Informe um valor: "<<endl;
+    cin>> num1;
+    cout<<"Informe outro valor: "<<endl;
+    cin>> num2;
+    cout<<"Os valores fornecidos foram respectivamente "<<num1<<" e "<<num2<<endl;
+    
+    trocar(num1,num2);
+
+    return 0;
+}
+
+Algoritmo questao 17:
+#include <iostream>
+using namespace std;
+    
+    void troca (int a,int& b){
+        a = a * 3;
+        b = b * 3;
+        cout<< "valores alterados agora pricipal e "<<a<<", e o valor de referencia e "<<b<<endl;
+    }
+int main() {
+    int valor, referencia;
+
+    cout<<"Informe o valor pricipal: "<<endl;
+    cin>> valor;
+    cout<<"Informe o valor referencia: "<<endl;
+    cin>> referencia;
+    cout<<"os valores fornecidos foram principal: "<<valor<<" referencia: "<<referencia<<endl;
+
+    troca(valor,referencia);
+    
+    return 0;
+}
+
+
+
+Algoritmo questao 18:
+#include <iostream>
+using namespace std;
+  void incrementar (int *p){
+      *p = *p + 1;
+      cout<<"O valor apos a incrementaçao é "<< *p<<endl;
+  }
+
+int main() {
+    int num1;
+    cout<<"Informe um valor: "<<endl;
+    cin>> num1;
+    int ptr = num1;
+    
+    incrementar(&ptr);
+    return 0;
+}
+
+
+Algoritmo questao 19:
+#include <iostream>
+using namespace std;
+  void media (float  n1,float n2,float n3){
+  float media;
+      media = (n1+n2+n3)/3;
+      
+      cout<<"A media do aluno é "<<media<<endl;
+  }
+
+int main() {
+   float nota1,nota2,nota3;
+   
+   cout<<"Informe a primeira nota: "<<endl;
+   cin>>nota1;
+   cout<<"Informe a segunda nota: "<<endl;
+   cin>>nota2;
+   cout<<"Informe a terceira nota: "<<endl;
+   cin>>nota3;
+   
+   media (nota1, nota2, nota3);
+    return 0;
+}
+
+
+
+Algoritmo questao 20:
+#include <iostream>
+#include <string>
+using namespace std;
+  void nota (string nm, float n1){
+   if (n1 >=7){
+      cout<<" O/a "<<nm<<" esta aprovado "<<endl;
+   }else if(n1>4 && n1 < 7){
+      cout<<" O/a "<<nm<<" esta de prova final "<<endl;
+   }else{
+     cout<<"O/a "<<nm<<" esta reprovado "<<endl;
+   }
+  }
+
+int main() {
+   float nota1;
+   string nome;
+
+   cout<<"Informe o nome do aluno: "<<endl;
+   cin>>nome;
+   cout<<"Informe a nota do "<<nome<<" : "<<endl;
+   cin>>nota1;
+
+   nota (nome, nota1);
+return 0;
+}
+
+
+Algoritmo questao 21:
+#include <iostream>
+using namespace std;
+   float area(float alt, float bs){
+    
+    float area = alt * bs;
+    return area;
+  }
+
+int main() {
+   float altura, base;
+   cout<<"Informe o valor da altura do retangulo: "<<endl;
+   cin>>altura;
+   cout<<"Informe o valor da base do retangulo: "<<endl;
+   cin>>base;
+  
+  cout<<"A area do retangulo é "<< area(altura, base)<<endl;
+ return 0;
+}
+
+
+
+Algoritmo questao 22:
+#include <iostream>
+using namespace std;
+
+int main() {
+   float salario, resultado;
+   const float bonus = 15.0/100.0;
+   
+   cout<<"Informe o valor do salario: "<<endl;
+   cin>>salario;
+   
+   resultado = salario + (salario * bonus );
+   
+   cout<<"O valor do salario com o bunos sera de "<<resultado<<endl;
+    return 0;
+}
+Algoritmo questão 23:
+#pragma once
+#include <iostream>
+using namespace std;
+
+void mostrarInfo() {
+    cout << "Informacoes do programa." << endl;
+}
+
+Algoritmo questão 24:
+#include <iostream>
+using namespace std;
+
+float mediaVetor(int* v, int tamanho) {
+    int soma = 0;
+    for (int i = 0; i < tamanho; i++)
+        soma += v[i];
+    return (float)soma / tamanho;
+}
+
+int main() {
+    int v[10] = {1,2,3,4,5,6,7,8,9,10};
+    cout << mediaVetor(v, 10) << endl;
+    return 0;
+}
+
+
+Algoritmo questao 25:
+#include <iostream>
+using namespace std;
+   int InvertSinal(int &valor){
+   int resultado;
+       if (valor > 0){
+           resultado = -(valor);
+       }else if(valor<0){
+           resultado = abs(valor);
+       }
+       return resultado;
+   }
+
+int main() {
+    int num1;
+    
+    cout<<"Digite um valor: "<<endl;
+    cin>>num1;
+    
+    cout<< "Trocando os sinais de "<<num1<< " para "<<InvertSinal(num1) <<endl;
+    return 0;
+}
+
+
+Algoritmo questao 26:
+#include <iostream>
+using namespace std;
+
+   void Soma (){
+       float num1, num2, resultado;
+       cout<<"Informe o primeiro valor: "<<endl;
+       cin>>num1;
+       cout<<"Informe o segundo valor: "<<endl;
+       cin>>num2;
+       
+       resultado = num1 + num2;
+       cout<<"Resultado da opercão "<<num1<<" + "<<num2<<" = "<<resultado<<endl;
+   }
+   void Subtracao (){
+       float num1, num2, resultado;
+       cout<<"Informe o primeiro valor: "<<endl;
+       cin>>num1;
+       cout<<"Informe o segundo valor: "<<endl;
+       cin>>num2;
+       
+       resultado = num1 - num2;
+       cout<<"Resultado da opercão "<<num1<<" - "<<num2<<" = "<<resultado<<endl;
+   }
+   void Multiplicacao (){
+       float num1, num2, resultado;
+       cout<<"Informe o primeiro valor: "<<endl;
+       cin>>num1;
+       cout<<"Informe o segundo valor: "<<endl;
+       cin>>num2;
+       
+       resultado = num1 * num2;
+       cout<<"Resultado da opercão "<<num1<<" * "<<num2<<" = "<<resultado<<endl;
+   }
+   void menu (){
+       int operacao;
+       cout<<"Operaçoes: "<<endl;
+       cout<<"1• Soma "<<endl;
+       cout<<"2• Subtraçao "<<endl;
+       cout<<"3° Multiplicaçao "<<endl;
+       
+       cout<<"Digite o numero da operaçao desejada: "<<endl;
+       cin>> operacao;
+       
+       if (operacao == 1){
+           Soma();
+       }else if(operacao == 2){
+           Subtracao();
+       }else if(operacao == 3){
+           Multiplicacao();
+       }
+   }
+   
+
+int main() {
+    menu();
+
+    return 0;
+}
+
+algoritmo questão 27:
+#include <iostream>
+using namespace std;
+
+float saldo = 1000;
+const float LIMITE_SAQUE = 500;
+
+void sacar(float valor) {
+    if (valor <= saldo && valor <= LIMITE_SAQUE)
+        saldo -= valor;
+}
+
+void depositar(float valor) {
+    saldo += valor;
+}
+
+void consultarSaldo() {
+    cout << "Saldo: " << saldo << endl;
+}
+
+int main() {
+    sacar(200);
+    depositar(300);
+    consultarSaldo();
+    return 0;
+}
+
+
+algoritmo questão 28:
+#include <iostream>
+using namespace std;
+
+struct Pessoa {
+    string nome;
+    int idade;
+    float altura;
+};
+
+void imprimir(Pessoa* p) {
+    cout << "Nome: " << p->nome << ", Idade: " << p->idade << ", Altura: " << p->altura << endl;
+}
+
+int main() {
+    Pessoa p = {"Maria", 25, 1.65f};
+    imprimir(&p);
+    return 0;
+}
+algoritmo questão 29:
+
+#include <iostream>
+using namespace std;
+
+template <typename T>
+void trocar(T* a, T* b) {
+    T temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int main() {
+    int x = 1, y = 2;
+    trocar(&x, &y);
+    cout << x << " " << y << endl;
+
+    float f1 = 3.5, f2 = 7.2;
+    trocar(&f1, &f2);
+    cout << f1 << " " << f2 << endl;
+
+    return 0;
+}
+
+algoritmo questão 30:
+
+#pragma once
+#include <iostream>
+using namespace std;
+
+void mostrar() {
+    cout << "Funcao com pragma once" << endl;
+}
+void trocar(T* a, T* b) {
+    T temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int main() {
+    int x = 1, y = 2;
+    trocar(&x, &y);
+    cout << x << " " << y << endl;
+
+    float f1 = 3.5, f2 = 7.2;
+    trocar(&f1, &f2);
+    cout << f1 << " " << f2 << endl;
+
+    return 0;
+}
+
+algoritmo questão 30:
+
+#pragma once
+#include <iostream>
+using namespace std;
+
+void mostrar() {
+    cout << "Funcao com pragma once" << endl;
+}
